@@ -27,6 +27,7 @@ import upload from './Components/upload';
 import assignments from './Components/assignments';
 import Student from './Components/Student';
 import ShowTasks from './Components/ShowTasks';
+import ShowPost from './Components/ShowPost';
 
 
 
@@ -66,13 +67,6 @@ class App extends Component{
                   {/* <Route exact path="/NgoSignIn">
                     <NgoSignIn/>
                   </Route> */}
-                </Switch>
-                {/* <Route exact path="/Quiz">
-                    <Quiz/>
-                  </Route> */}
-                  {/* <Route exact path="/LandingPage">
-                    <LandingPage/>
-                  </Route> */}
                   <Route exact path="/Bot">
                     <Bot/>
                   </Route>
@@ -96,6 +90,15 @@ class App extends Component{
                   <Route exact path="/assignments" component={assignments}/> 
                   <Route exact path="/student" component={Student}/>
                    <Route exact path="/pending" component={ShowTasks}/>
+                   <Route exact path="/:post_id" component={ShowPost}/>
+                </Switch>
+                {/* <Route exact path="/Quiz">
+                    <Quiz/>
+                  </Route> */}
+                  {/* <Route exact path="/LandingPage">
+                    <LandingPage/>
+                  </Route> */}
+                  
               </div>
              
             </Router>
