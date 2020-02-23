@@ -66,9 +66,7 @@ export class Location extends Component {
                         
                        
                     </ul>
-                    <div class="buy-menu-btn d-none">
-                        <a  class="btn btn-primary">Logout</a>
-                    </div>
+                    
                 </div>
             </div>
         </header>

@@ -34,7 +34,7 @@ export class Grading extends Component {
             console.log(res.error);
             console.log(res.data);
         })
-        
+        this.props.history.push('/teacher');
     }
     render() {
         return (
@@ -70,9 +70,7 @@ export class Grading extends Component {
                         
                        
                     </ul>
-                    <div class="buy-menu-btn d-none">
-                        <a  class="btn btn-primary">Logout</a>
-                    </div>
+                    
                 </div>
             </div>
         </header>

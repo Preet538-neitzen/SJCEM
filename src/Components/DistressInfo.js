@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import fire from '../Config/Config'
 import firebase from 'firebase/app'
+import {Link} from 'react-router-dom'
 // import SimpleReactFileUpload from '../Components/Upload'
 
 
@@ -104,7 +105,39 @@ export class Info extends Component {
 
 
  <div>
-
+ <header id="topnav" class="defaultscroll sticky bg-white">
+            <div class="container">
+                
+                <div>
+                    <a class="logo" href="index.html">Distress</a>
+                </div>                 
+               
+                
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                      
+                    <ul class="navigation-menu">
+                        <li><Link to="/student">Home</Link></li>
+                        
+                       
+                    </ul>
+                    
+                </div>
+            </div>
+        </header>
 
 <div>
              <section class="section">

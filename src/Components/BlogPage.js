@@ -65,7 +65,7 @@ export class BlogPage extends Component {
                         <li >
                             <a href="/createPost">Create Post</a>
                         </li>
-                        <li><a href="/SignIn">Dashboard</a></li>
+                        <li><a href="/student">Dashboard</a></li>
                         
                     </ul>
                     <div class="buy-menu-btn d-none">

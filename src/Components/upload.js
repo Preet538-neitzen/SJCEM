@@ -30,6 +30,7 @@ export class upload extends Component {
             console.log(res);
             console.log(res.error);
         })
+        this.props.history.push('/teacher');
     }
     handleChange=(e)=>{
         let name=e.target.name;

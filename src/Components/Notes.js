@@ -58,9 +58,7 @@ export class Notes extends Component {
                 <div>
                     <a class="logo" href="index.html">Nearby Solutions</a>
                 </div>                 
-                <div class="buy-button">
-                    <a  class="btn btn-primary">Logout</a>
-                </div>
+                
                 
                 <div class="menu-extras">
                     <div class="menu-item">

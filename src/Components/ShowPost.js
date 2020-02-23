@@ -33,7 +33,7 @@ export class ShowPost extends Component {
             console.log(res);
             console.log(res.data);
         })
-        this.props.history.push('/pending');
+        this.props.history.push('/student');
     }
     render() {
         
@@ -46,9 +46,7 @@ export class ShowPost extends Component {
                 <div>
                     <a class="logo" href="index.html">Tasks</a>
                 </div>                 
-                <div class="buy-button">
-                    <a  class="btn btn-primary">Logout</a>
-                </div>
+               
                 
                 <div class="menu-extras">
                     <div class="menu-item">
