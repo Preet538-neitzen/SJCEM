@@ -28,7 +28,13 @@ import assignments from './Components/assignments';
 import Student from './Components/Student';
 import ShowTasks from './Components/ShowTasks';
 import ShowPost from './Components/ShowPost';
-
+import Submissions from './Components/Submissions';
+import Grading from './Components/Grading';
+import Reports from './Components/Reports';
+import Location from './Components/Location';
+import Info from './Components/DistressInfo'
+import Notes from './Components/Notes';
+import Distress from './Components/Distress';
 
 
 
@@ -87,10 +93,17 @@ class App extends Component{
                   </Route>
                   <Route exact path="/teacher" component={TeacherDash}/>
                   <Route exact path="/upload" component={upload}/>
-                  <Route exact path="/assignments" component={assignments}/> 
+                  <Route exact path="/assignments" component={Submissions}/> 
                   <Route exact path="/student" component={Student}/>
-                   <Route exact path="/pending" component={ShowTasks}/>
-                   <Route exact path="/:post_id" component={ShowPost}/>
+                  <Route exact path="/Reports" component={Reports}/>
+                  <Route exact path="/Location" component={Location}/>
+                  <Route exact path="/DistressInfoPage" component={Info}/>
+                  <Route exact path="/Notes" component={Notes}/>
+                   <Route exact path="/Distress" component={Distress}/>
+                  <Route exact path="/pending" component={ShowTasks}/>
+                  <Route exact path="/correct/:grad_id" component={Grading}/>
+                  <Route exact path="/:post_id" component={ShowPost}/>
+                  
                 </Switch>
                 {/* <Route exact path="/Quiz">
                     <Quiz/>

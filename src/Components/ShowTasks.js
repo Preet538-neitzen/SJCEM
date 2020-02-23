@@ -14,17 +14,19 @@ export class ShowTasks extends Component {
     }
 
     componentDidMount() {
-        var email;
+        console.log('waited');
+        let email;
         let myApp=this;
         fire.auth().onAuthStateChanged(function(user) {
             if (user) {
-              var email=user.email;
-              console.log(email)
+              let email=user.email;
+              console.log(email);
               console.log('insdide');
-              var url='http://localhost:8000/api/pending_task/';
+              let url='http://localhost:8000/api/pending_task/';
             Axios.post(url,{'email':email}).then(res => {
                 console.log(res.data);
                 console.log(res.error);
+                console.log('erooer')
                 myApp.setState({tasks:res.data});
 
 

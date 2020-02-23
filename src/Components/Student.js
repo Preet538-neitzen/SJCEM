@@ -33,7 +33,7 @@ export class Student extends Component {
                 <div id="navigation">
                    
                     <ul class="navigation-menu">
-                        <li><a href="/teacher">Home</a></li>
+                        <li><a href="/student">Home</a></li>
                         
                     </ul>
                     
@@ -73,7 +73,17 @@ export class Student extends Component {
                         </div>
                    
                     
-                    
+                        <div class="col-md-4 col-12 mt-5">
+                        <div class="features">
+                            <div class="image position-relative d-inline-block">
+                                <img src="images\icon\calendar.svg" alt=""/>
+                            </div>
+
+                            <div class="content mt-4">
+                                <Link to="/Reports"><h4 class="title-2">Reports</h4></Link>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-4 col-12 mt-5">
                         <div class="features">
                             <div class="image position-relative d-inline-block">
@@ -110,17 +120,7 @@ export class Student extends Component {
                         </div>
                     </div>
                     
-                    <div class="col-md-4 col-12 mt-5">
-                        <div class="features">
-                            <div class="image position-relative d-inline-block">
-                                <img src="images\icon\calendar.svg" alt=""/>
-                            </div>
-
-                            <div class="content mt-4">
-                                <h4 class="title-2">Reports</h4>
-                                 </div>
-                        </div>
-                    </div>
+                    
                     
                     <div class="col-md-4 col-12 mt-5">
                         <div class="features">
@@ -129,7 +129,7 @@ export class Student extends Component {
                             </div>
 
                             <div class="content mt-4">
-                                <h4 class="title-2">Make Notes</h4>
+                                <h4 class="title-2"><a href="/Notes">Make Notes</a></h4>
                                  </div>
                         </div>
                     </div>

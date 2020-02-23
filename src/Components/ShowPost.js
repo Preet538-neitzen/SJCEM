@@ -13,7 +13,7 @@ export class ShowPost extends Component {
     }
     handleChange=(e)=>{
         let name=e.target.name;
-        this.setState({name:e.target.value});
+        this.setState({[name]:e.target.value});
     }
     componentDidMount() {
         console.log("dububfbuebfuwb");
