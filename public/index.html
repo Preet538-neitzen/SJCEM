@@ -75,11 +75,15 @@
     <link href="css\materialdesignicons.min.css" rel="stylesheet" type="text/css">
     <!-- Main css -->
     <link href="css\style.css" rel="stylesheet" type="text/css">
-    
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+  
       
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       
- 
+      <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+      <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+      <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+      <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -135,5 +139,62 @@
     async defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRouBz_355nnsZNrgpIObuuSmrNM9YVjg&libraries=places"></script>
         <script src="js\app.js"></script>
+        <script>
+          function addMarkersToMap(map) {
+    var parisMarker = new H.map.Marker({lat:48.8567, lng:2.3508});
+    map.addObject(parisMarker);
+
+    var romeMarker = new H.map.Marker({lat:41.9, lng: 12.5});
+    map.addObject(romeMarker);
+
+    var berlinMarker = new H.map.Marker({lat:52.5166, lng:13.3833});
+    map.addObject(berlinMarker);
+
+    var madridMarker = new H.map.Marker({lat:40.4, lng: -3.6833});
+    map.addObject(madridMarker);
+
+    var londonMarker = new H.map.Marker({lat:51.5008, lng:-0.1224});
+    map.addObject(londonMarker);
+}
+          function loadMap() {
+  var platform = new H.service.Platform({
+  'apikey': 'hnxn-hc6r876FaoJIkHqp1ci8DsLAe4yKllYAPPGMGo'
+  });
+
+  var defaultLayers = platform.createDefaultLayers();
+  
+  var map = new H.Map(
+    document.getElementById('mapContainer'),
+    defaultLayers.vector.normal.map,
+    {
+      center: {lat:50, lng:5},
+  zoom: 4,
+  pixelRatio: window.devicePixelRatio || 1
+    });
+    var mapEvents = new H.mapevents.MapEvents(map);
+  map.addEventListener('tap', function(evt) {
+    // Log 'tap' and 'mouse' events:
+    console.log(evt.type, evt.currentPointer.type); 
+
+});
+
+var behavior = new H.mapevents.Behavior(mapEvents);
+
+
+}
+
+window.addEventListener('resize', () => map.getViewPort().resize());
+
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM is ready');
+  loadMap();
+  addMarkersToMap(map);
+});
+        </script>
+       
+          <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+  
+        
   </body>
 </html>

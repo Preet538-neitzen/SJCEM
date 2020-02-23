@@ -19,7 +19,7 @@ import  Bot from './Components/Bot'
 import Quizbee from './Quiz/index'
 import ResultDisplay from './Components/ResultDisplay'
 import SciencePost from './Blog/SciencePost'
-import BlogPage from './Blog/BlogPage'
+import BlogPage from './Components/BlogPage'
 import CommercePost from './Blog/CommercePost'
 import ArtsPost from './Blog/ArtsPost'
 import TeacherDash from './Components/TeacherDash';
@@ -35,6 +35,9 @@ import Location from './Components/Location';
 import Info from './Components/DistressInfo'
 import Notes from './Components/Notes';
 import Distress from './Components/Distress';
+import QuizPage from './Components/QuizPage';
+import CreatePost from './Components/CreatePost';
+import Post from './Components/Post';
 
 
 
@@ -79,9 +82,7 @@ class App extends Component{
                   <Route exact path="/Quiz">
                     <Quizbee/>
                   </Route>
-                  <Route exact path="/BlogPage">
-                   <BlogPage/>
-                  </Route>
+                  
                   <Route exact path="/sciencePost">
                   <SciencePost/>
                   </Route>
@@ -99,10 +100,18 @@ class App extends Component{
                   <Route exact path="/Location" component={Location}/>
                   <Route exact path="/DistressInfoPage" component={Info}/>
                   <Route exact path="/Notes" component={Notes}/>
+                  <Route exact path="/BlogPage">
+                   <BlogPage/>
+                  </Route>
+                  
+                   <Route exact path="/createPost" component={CreatePost}/>
                    <Route exact path="/Distress" component={Distress}/>
                   <Route exact path="/pending" component={ShowTasks}/>
+                  <Route exact path="/QuizPage" component={QuizPage}/>
+                  <Route exact path='/discussion/:post_id' component={Post} />
                   <Route exact path="/correct/:grad_id" component={Grading}/>
                   <Route exact path="/:post_id" component={ShowPost}/>
+                 
                   
                 </Switch>
                 {/* <Route exact path="/Quiz">

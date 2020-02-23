@@ -1,6 +1,8 @@
 
 
 import React, { Component } from 'react'
+import SimpleReactFileUpload from './SimpleReactFileUpload';
+import {Link} from 'react-router-dom'
 
 export class Notes extends Component {
     constructor(props){
@@ -50,7 +52,44 @@ export class Notes extends Component {
     render() {
         return (
             <div>
-            <div class="col mt-4 pt-2">
+                <header id="topnav" class="defaultscroll sticky bg-white">
+            <div class="container">
+                
+                <div>
+                    <a class="logo" href="index.html">Nearby Solutions</a>
+                </div>                 
+                <div class="buy-button">
+                    <a  class="btn btn-primary">Logout</a>
+                </div>
+                
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                      
+                    <ul class="navigation-menu">
+                        <li><Link to="/student">Home</Link></li>
+                        
+                       
+                    </ul>
+                    <div class="buy-menu-btn d-none">
+                        <a  class="btn btn-primary">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <div class="" style={{paddingTop:100}}>
                                 <div class="component-wrapper rounded shadow">
                                     <div class="p-4 border-bottom">
                                         <h4 class="title mb-0"> Resources </h4>
@@ -60,8 +99,8 @@ export class Notes extends Component {
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <ul class="nav nav-pills nav-justified flex-column flex-sm-row rounded" id="pills-tab" role="tablist">
-                                                    <li class="nav-item" active>
-                                                        <a class="nav-link rounded" id="pills-cloud-tab" data-toggle="pill" href="#pills-cloud" role="tab" aria-controls="pills-cloud" aria-selected="false">
+                                                    <li class="nav-item" >
+                                                        <a class="nav-link rounded" id="pills-cloud-tab" active data-toggle="pill" href="#pills-cloud" role="tab" aria-controls="pills-cloud" aria-selected="false">
                                                             <div class="text-center pt-1 pb-1">
                                                                 <h4 class="title font-weight-normal mb-0">View Notes</h4>
                                                             </div>
@@ -116,9 +155,7 @@ export class Notes extends Component {
                                                         <div class="mt-3  text-md-left text-center d-sm-flex">
                                                            
                                                             <div class="mt-md-4 mt-3 mt-sm-0">
-                                                            <input type="file" onChange={this.fileUpload} class="btn btn-primary mt-2"  />
-                                                                {/* <a href="javascript:void(0)" class="btn btn-primary mt-2">Upload</a> */}
-                                                                
+                                                            <SimpleReactFileUpload/>
                                                             </div>
                                                         </div>    
                                                         </p>                       

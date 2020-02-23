@@ -10,7 +10,7 @@ export class Student extends Component {
             <div class="container">
                 
                 <div>
-                    <a class="logo" href="index.html">Teach Mate</a>
+                    <a class="logo" href="index.html">Nearby Solutions</a>
                 </div>                 
                 <div class="buy-button">
                     <a href="" target="" class="btn btn-primary">Logout</a>
@@ -103,7 +103,7 @@ export class Student extends Component {
                             </div>
 
                             <div class="content mt-4">
-                                <h4 class="title-2">Ask Doubts</h4>
+                                <h4 class="title-2"><a href="/QuizPage">Quiz</a></h4>
                                  </div>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ export class Student extends Component {
                             </div>
 
                             <div class="content mt-4">
-                                <h4 class="title-2">Discussion</h4>
+                                <h4 class="title-2"><a href="/BlogPage">Discussion</a></h4>
                                    </div>
                         </div>
                     </div>
@@ -130,6 +130,28 @@ export class Student extends Component {
 
                             <div class="content mt-4">
                                 <h4 class="title-2"><a href="/Notes">Make Notes</a></h4>
+                                 </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 mt-5">
+                        <div class="features">
+                            <div class="image position-relative d-inline-block">
+                            <img src="images\icon\calendar.svg" alt=""/>
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="title-2"><a href="/Distress">Distress</a></h4>
+                                 </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 mt-5">
+                        <div class="features">
+                            <div class="image position-relative d-inline-block">
+                            <img src="images\icon\user.svg" alt=""/>
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="title-2"><a href="/Location">Hostel</a></h4>
                                  </div>
                         </div>
                     </div>

@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 import fire from './Config/Config'
 import firebase from 'firebase/app'
@@ -5,11 +6,14 @@ import UserSignIn from './UserSignIn';
 import Header from './UpAndDown/Header'
 import PieChart from './Components/Chart'
 import ColumnChart from './Components/BarGraph'
+import Student from './Components/Student';
+import TeacherDash from './Components/TeacherDash';
 
 export class New extends Component {
     constructor(props){
         super(props);
         this.state={
+            person:'',
           user: null,
           email: '',
           password: '',
@@ -68,6 +72,7 @@ export class New extends Component {
         login(e) {
           e.preventDefault();
           fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
+
           }).catch((error) => {
               console.log(error);
               this.setState({errorMessage:error.message});
@@ -88,8 +93,9 @@ export class New extends Component {
     
  
         componentDidMount(){
-    
-        //   if(!this.state.user){
+
+
+//   if(!this.state.user){
         
         //     firebase.auth().signInWithPopup(provider).then(function(result) {
         //       // This gives you a Google Access Token. You can use it to access the Google API.
@@ -207,7 +213,9 @@ export class New extends Component {
                 
                 var hello = doc.data().story;
                 console.log(hello)
-                self.setState({myStory:hello})
+
+
+self.setState({myStory:hello})
                   console.log("Document data:", doc.data().story);
               } else {
                   // doc.data() will be undefined in this case
@@ -321,46 +329,40 @@ export class New extends Component {
        
       newFun(e){
         e.preventDefault();
-//         var actionCodeSettings = {
-//           // URL you want to redirect back to. The domain (www.example.com) for this
-//           // URL must be whitelisted in the Firebase Console.
-//           url: 'http://localhost:3000/UserSignIn?username=&Occupation=&PhoneNumber=&signup-email=sanghavipreet2001%40gmail.in&signup-password=',
-//           // This must be true.
-//           handleCodeInApp: true,
-//         };
-//         var email = this.state.email;
-//         firebase.auth().sendSignInLinkToEmail(email, actionCodeSettings)
-// .then(function() {
-//   // The link was successfully sent. Inform the user.
-//   // Save the email locally so you don't need to ask the user for it again
-//   // if they open the link on the same device.
-//   localStorage.setItem("emailForSignIn",email)
-// })
-// .catch(function(error) {
-// console.log(error)});
+
 var user = firebase.auth().currentUser;
 
 user.sendEmailVerification().then(function() {
-  // Email sent.
+
 }).catch(function(error) {
-  // An error happened.
+ 
 });
 
-       }
-        
+
+}
+       setGender(event) {
+        console.log(event.target.value);
+        localStorage.setItem("Profession",event.target.value)
+      }
+        handlePerson=(e)=>{
+            let val=e.target.value;
+            console.log('oersdsn:'+val);
+            this.setState({person:val});
+        }
     render() {
         return (
 <>
 
 
  <div>
+     
+     
                 {this.state.user?(<> 
-                
-                {/* User Dashboard */}
+                 
                 <Header name={this.state.displayName}/>
              
 
-                   <section class="bg-home" style={{backgroundImage: `url(images/single/bg01.jpg )`}} id="home">
+                   <section class="bg-home"  id="home">
             <div class="home-center">
                 <div class="home-desc-center">
                     <div class="container">
@@ -381,101 +383,18 @@ user.sendEmailVerification().then(function() {
         </section>
     
            {this.state.user.emailVerified?(<>    <section class="section" style={{paddingTop:"10px"}} >
-            <div class="container mt-100 mt-60" id="portfolio">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                        <div class="work-container position-relative d-block overflow-hidden rounded">
-                            <a class="mfp-image d-inline-block" href="http://localhost:3002/" title="">
-                                <img src="images\single\QuizSkyWritingGeneric_large (1).jpg" class="img-fluid rounded" alt="work-image"/>
-                                <div class="overlay-work"></div>
-                            </a>
-                            <div class="content personal-port">
-                                <a  class="title text-white d-block font-weight-bold">Shifting Perspective</a>
-                                <small class="text-light">Quiz</small>
-                            </div>
-                            <div class="client personal-port">
-                                <small class="text-light user d-block"><i class="mdi mdi-account"></i> Play a quiz & learn</small>
-                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>Code Black</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                        <div class="work-container position-relative d-block overflow-hidden rounded">
-                            <a class="mfp-image d-inline-block" href="/BlogPage" title="">
-                                <img src="images\single\community.png" class="img-fluid rounded" alt="work-image"/>
-                                <div class="overlay-work"></div>
-                            </a>
-                            <div class="content personal-port">
-                                <a class="title text-white d-block font-weight-bold"></a>
-                                <small class="text-light">Carrier Guidance</small>
-                            </div>
-                            <div class="client personal-port">
-                                <small class="text-light user d-block"><i class="mdi mdi-account"></i> Read Community Blogs</small>
-                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i> Code Black</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                        <div class="work-container position-relative d-block overflow-hidden rounded">
-                            <a class="mfp-image d-inline-block" href="/Bot"  title="">
-                                <img src="images\single\340-3403351_chatbots-builder-pricing-crozdesk-robot-icon-png-white.png" class="img-fluid rounded" alt="work-image"/>
-                                <div class="overlay-work"></div>
-                            </a>
-                            <div class="content personal-port">
-                                <a class="title text-white d-block font-weight-bold">Bot Interaction !</a>
-                                <small class="text-light">Ruled Based Bot</small>
-                            </div>
-                            <div class="client personal-port">
-                                <small class="text-light user d-block"><i class="mdi mdi-account"></i>Chat with our bot</small>
-                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>Code Black</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+             {
+         this.state.person=='Student'?<Student/>:<TeacherDash/>
+     }
 
         
         </section>
-        <section class="section">
-                    <div class="container">
-                        <div class="row ">
-                            <div class="col-lg-6 col-md-6 mb-4 pb-2">
-                            <div class="blog position-relative overflow-hidden shadow rounded">
-                                <PieChart/>
-                            </div>
-                        
-                            </div>
-                            
-                            <div class="col-lg-6 col-md-6 mb-4 pb-2">
-                            <div class="blog position-relative overflow-hidden shadow rounded">
-                              <ColumnChart/>
-                            </div>
-                              
-                            </div>
-                            
-                            <div class=" col-lg-12 col-md-12 mb-12 pb-12">
-                            {/* <div class="blog position-relative overflow-hidden shadow rounded">
-                            <LineChart/>
-                            </div> */}
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </section></>):(<><div class="form-group">
+        </>):(<><div class="form-group">
+
+
                 <a class="btn btn-outline-primary" onClick={this.newFun}>Verfiy Your Account</a>
               </div></>)}
                  <button style={{paddingTop:'100p'}} class="btn btn-outline-primary m-3 mb-4" onClick={this.logout}>Logout</button> </>):(<> <div>
-                {/* <div id="preloader">
-                <div id="status">
-                    <div class="spinner">
-                        <div class="double-bounce1"></div>
-                        <div class="double-bounce2"></div>
-                    </div>
-                </div>
-            </div> */}
       
             
             <div class="back-to-home rounded d-none d-sm-block">
@@ -500,7 +419,7 @@ user.sendEmailVerification().then(function() {
                                             <div class="row">
 
 
-                                            <div class="col-lg-12">
+<div class="col-lg-12">
                                                     <div class="form-group position-relative">
                                                         <label>Your Username <span class="text-danger">*</span></label>
                                                         <i class="mdi mdi-account ml-3 icons"></i>
@@ -517,7 +436,11 @@ user.sendEmailVerification().then(function() {
                                                     </div>
                                                 </div>
 
-                                              
+                                                <div >
+          <input type="radio" onChange={this.handlePerson} value="Student" name="gender"/> Student
+          <input type="radio" onChange={this.handlePerson} value="Teacher" name="gender"/> Teacher
+        </div>
+
         
                                                 <div class="col-lg-12">
                                                     <div class="form-group position-relative">
@@ -541,7 +464,9 @@ user.sendEmailVerification().then(function() {
                                                 </div>
                                                 <div class="col-12 text-center">
                                                     <p class="mb-0 mt-3"><small class="text-dark mr-2">Don't have an account ?</small> <a href="/SignIn" class="text-dark font-weight-bold">Sign Up</a></p>
-                                                    <h7  style={{color:'red',fontWeight:'bold',paddingLeft:'50px',paddingRight:'60px'}}>{this.state.errorMessage}</h7> 
+
+
+<h7  style={{color:'red',fontWeight:'bold',paddingLeft:'50px',paddingRight:'60px'}}>{this.state.errorMessage}</h7> 
                                                 </div>
                                             </div>
                                         </form>
@@ -557,78 +482,7 @@ user.sendEmailVerification().then(function() {
                 </div>  </>)}
          
             </div>
-            {/* {this.state.user?(<p>Hi</p>):( <div>
-                <div id="preloader">
-                <div id="status">
-                    <div class="spinner">
-                        <div class="double-bounce1"></div>
-                        <div class="double-bounce2"></div>
-                    </div>
-                </div>
-            </div>
-      
-            
-            <div class="back-to-home rounded d-none d-sm-block">
-                <a href="index.html" class="text-white rounded d-inline-block text-center"><i class="mdi mdi-home"></i></a>
-            </div>
-                <section class="bg-home">
-                <div class="home-center">
-                    <div class="home-desc-center">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-lg-7 col-md-6">
-                                    <div class="mr-lg-5">   
-                                        <img src="images\user\login.png" class="img-fluid d-block mx-auto" alt=""/>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                    <div class="login-page bg-white shadow rounded p-4">
-                                        <div class="text-center">
-                                            <h4 class="mb-4">Login</h4>  
-                                        </div>
-                                        <form class="login-form">
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <div class="form-group position-relative">
-                                                        <label>Your Email <span class="text-danger">*</span></label>
-                                                        <i class="mdi mdi-account ml-3 icons"></i>
-                                                        <input type="email" class="form-control pl-5" placeholder="Email" name="email" required=""/>
-                                                    </div>
-                                                </div>
-        
-                                                <div class="col-lg-12">
-                                                    <div class="form-group position-relative">
-                                                        <label>Password <span class="text-danger">*</span></label>
-                                                        <i class="mdi mdi-key ml-3 icons"></i>
-                                                        <input type="password" name="password" class="form-control pl-5" placeholder="Password" required=""/>
-                                                    </div>
-                                                </div>
-    
-                                         
-                                                <div class="col-lg-12 mb-0">
-                                                    <button onClick={this.login} class="btn btn-primary w-100">Sign in</button>
-                                                </div>
-                                                <div class="col-lg-12 mt-4 text-center">
-                                                    <h6>Or Login With</h6>
-                                                    <ul class="list-unstyled social-icon mb-0 mt-3">
-                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-facebook" title="Facebook"></i></a></li>
-                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-google-plus" title="Google"></i></a></li>
-                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-github-circle" title="Github"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-12 text-center">
-                                                    <p class="mb-0 mt-3"><small class="text-dark mr-2">Don't have an account ?</small> <a href="page-signup.html" class="text-dark font-weight-bold">Sign Up</a></p>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-            </section> */}
-                {/* </div>)} */}
+         
            </>
         )
     }

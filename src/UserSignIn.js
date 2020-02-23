@@ -4,6 +4,8 @@ import firebase from 'firebase/app'
 import Header from './UpAndDown/Header'
 import PieChart from './Components/Chart'
 import ColumnChart from './Components/BarGraph'
+import Student from './Components/Student'
+import TeacherDash from './Components/TeacherDash'
 
 export class UserSignIn extends Component {
     constructor(props){
@@ -338,189 +340,111 @@ alert(){
     render() {
         return (
             <div>
-                {this.state.user?(<> 
-                  <div class="back-to-home rounded d-none d-sm-block">
-                <a href="/" class="text-white rounded d-inline-block text-center"><i class="mdi mdi-home"></i></a>
-            </div>
+                 {this.state.user?(<> 
+                 
                 
-                {/* User Dashboard */}
-                <Header name={this.state.username}/>
-             
-
-                <section class="bg-home" style={{backgroundImage: `url(images/single/bg01.jpg )`}} id="home">
-            <div class="home-center">
-                <div class="home-desc-center">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-8 col-md-9">
-                                <div class="title-heading mt-4">
-                                    <h1 class="display-3 font-weight-bold mb-3">Here I'm {this.state.username} <br/> <span class="element" data-elements="Calvin Carlo, UI/UX Designer, Web Developer"></span> </h1>
-                                    <p class="para-desc text-muted">I am a user of Code Black .</p>
-                                    <div class="mt-4 pt-2">
-                                        {/* <a href="#portfolio" class="btn btn-primary mt-2 mr-2 mouse-down"><i class="mdi mdi-camera"></i> View Portfolio</a>
-                                        <a href="#contact" class="btn btn-outline-primary mt-2 mouse-down"><i class="mdi mdi-cloud-download"></i> Hire Me</a> */}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-                    <div class="container">
-                        <div class="row ">
-                            <div class="col-lg-6 col-md-6 mb-4 pb-2">
-                            <div class="blog position-relative overflow-hidden shadow rounded">
-                                <PieChart/>
-                            </div>
-                        
-                            </div>
-                            
-                            <div class="col-lg-6 col-md-6 mb-4 pb-2">
-                            <div class="blog position-relative overflow-hidden shadow rounded">
-                              <ColumnChart/>
-                            </div>
-                              
-                            </div>
-                            
-                            <div class=" col-lg-12 col-md-12 mb-12 pb-12">
-                            {/* <div class="blog position-relative overflow-hidden shadow rounded">
-                            <LineChart/>
-                            </div> */}
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </section>
-           {this.state.user.emailVerified?(<>      <section class="section" style={{paddingTop:"10px"}} >
-            <div class="container mt-100 mt-60" id="portfolio">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                        <div class="work-container position-relative d-block overflow-hidden rounded">
-                            <a class="mfp-image d-inline-block" href="/Quiz" title="">
-                                <img src="images\single\QuizSkyWritingGeneric_large (1).jpg" class="img-fluid rounded" alt="work-image"/>
-                                <div class="overlay-work"></div>
-                            </a>
-                            <div class="content personal-port">
-                                <a  class="title text-white d-block font-weight-bold">Shifting Perspective</a>
-                                <small class="text-light">Quiz</small>
-                            </div>
-                            <div class="client personal-port">
-                                <small class="text-light user d-block"><i class="mdi mdi-account"></i> Play a quiz & learn</small>
-                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>Code Black</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                        <div class="work-container position-relative d-block overflow-hidden rounded">
-                            <a class="mfp-image d-inline-block" href="/BlogPage" title="">
-                                <img src="images\single\community.png" class="img-fluid rounded" alt="work-image"/>
-                                <div class="overlay-work"></div>
-                            </a>
-                            <div class="content personal-port">
-                                <a class="title text-white d-block font-weight-bold"></a>
-                                <small class="text-light">Carrier Guidance</small>
-                            </div>
-                            <div class="client personal-port">
-                                <small class="text-light user d-block"><i class="mdi mdi-account"></i> Read Community Blogs</small>
-                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i> Code Black</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
-                        <div class="work-container position-relative d-block overflow-hidden rounded">
-                            <a class="mfp-image d-inline-block" href="/Bot"  title="">
-                                <img src="images\single\340-3403351_chatbots-builder-pricing-crozdesk-robot-icon-png-white.png" class="img-fluid rounded" alt="work-image"/>
-                                <div class="overlay-work"></div>
-                            </a>
-                            <div class="content personal-port">
-                                <a class="title text-white d-block font-weight-bold">Bot Interaction !</a>
-                                <small class="text-light">Ruled Based Bot</small>
-                            </div>
-                            <div class="client personal-port">
-                                <small class="text-light user d-block"><i class="mdi mdi-account"></i>Chat with our bot</small>
-                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>Code Black</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        
-        </section></>):(<><div class="form-group">
-                <a class=" btn btn-primary" onClick={this.newFun}>Verfiy Your Account</a>
-              </div></>)}
-                 <button style={{paddingTop:'100p'}} class="btn btn-outline-primary m-3 mb-4" onClick={this.logout}>Logout</button> </>):(<> 
-                  <div class="back-to-home rounded d-none d-sm-block">
-                <a href="/" class="text-white rounded d-inline-block text-center"><i class="mdi mdi-home"></i></a>
-            </div>  <section class="cover-user bg-white">
-            <div class="container-fluid">
-                <div class="row position-relative">
-                    <div class="col-lg-4 cover-my-30 order-2">
-                        <div class="cover-user-img d-flex align-items-center">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="login_page position-relative">
-                                        <div class="text-center">
-                                            <h4 class="mb-4" href="/SignUp">Signup</h4>  
-                                        </div>
-                                        <form>
-            <div class="form-group">
-                <input type="Name" id="username" value={this.state.username} onChange={this.handleChange} name="username" placeholder="Username" class="form-control"/>
-              </div>
-              <div class="form-group">
-                <input type="Occupation" value={this.state.Occupation} onChange={this.handleChange} name="Occupation" placeholder="Occupation" class="form-control"/>
-              </div>
-              <div class="form-group">
-                <input type="PhoneNumber" value={this.state.PhoneNumber}  onChange={this.handleChange} name="PhoneNumber" placeholder="PhoneNumber" class="form-control"/>
-               
-              </div>
-              <div class="form-group">
-                <input type="Phone Number" value={this.state.email} onChange={this.handleChangeEmail} name="signup-email" placeholder="Email Address" class="form-control"/>
-              </div>
-            
-              <div class="form-group">
-                <input type="password" value={this.state.password} onChange={this.handleChangePass} name="signup-password" placeholder="Password" class="form-control"/>
-                <small class="text-muted">Must be at least 6 characters</small>
-              </div>
-              {/* <div class="form-group">
-                <input type="password" value={this.state.confirmedPassword} name="signup-password-confirm" placeholder="Confirm password" class="form-control"/>
-              </div> */}
-              <div class="form-group">
-                <button class="btn-block btn btn-primary" type="submit" onClick={this.signup}>Sign Up</button>
-              </div>
-           
-              <div class="mx-auto">
-                                                <p class="mb-0 mt-3"><small class="text-dark mr-2">Already have an account ?</small> <a href="/LogIn" class="text-dark font-weight-bold">Log in</a></p>
-                                            </div>
-
-
-                                            <h7  style={{color:'red',fontWeight:'bold'}}>{this.state.errorMessage}</h7>   
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="signup-agree"/>
-                {/* <label class="custom-control-label text-small text-muted" for="signup-agree">I agree to the <a href="#">Terms &amp;
-        Conditions</a>
-                </label> */}
-              </div>
-              <hr/>
-            </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>    
-
-                    {/* <div class="col-lg-8 offset-lg-4 padding-less img order-1" style="background-image:url('images/user/02.jpg')" data-jarallax="{&quot;speed&quot;: 0.5}"></div>    */}
-
-                    <div class="col-lg-8 offset-lg-4 padding-less img order-1" style={{backgroundImage:"url('images/user/02.jpg')"}} data-jarallax='{"speed": 0.5}'></div>
-                </div>
-            </div>
-        </section></>)}
+              
+ 
+                    
+     
+            {this.state.user.emailVerified?(<>    <section class="section" style={{paddingTop:"10px"}} >
+              {
+          this.state.person=='Student'?<Student/>:<TeacherDash/>
+      }
+ 
          
+         </section>
+         </>):(<><div class="form-group">
+ 
+ 
+                 <a class="btn btn-outline-primary" onClick={this.newFun}>Verfiy Your Account</a>
+               </div></>)}
+                  <button style={{paddingTop:'100p'}} class="btn btn-outline-primary m-3 mb-4" onClick={this.logout}>Logout</button> </>):(<> <div>
+       
+             
+             <div class="back-to-home rounded d-none d-sm-block">
+                 <a href="/" class="text-white rounded d-inline-block text-center"><i class="mdi mdi-home"></i></a>
+             </div>
+                 <section class="bg-home">
+                 <div class="home-center">
+                     <div class="home-desc-center">
+                         <div class="container">
+                             <div class="row align-items-center">
+                                 <div class="col-lg-7 col-md-6">
+                                     <div class="mr-lg-5">   
+                                         <img src="images\user\login.png" class="img-fluid d-block mx-auto" alt=""/>
+                                     </div>
+                                 </div>
+                                 <div class="col-lg-5 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                     <div class="login-page bg-white shadow rounded p-4">
+                                         <div class="text-center">
+                                             <h4 class="mb-4">Login</h4>  
+                                         </div>
+                                         <form class="login-form">
+                                             <div class="row">
+ 
+ 
+ <div class="col-lg-12">
+                                                     <div class="form-group position-relative">
+                                                         <label>Your Username <span class="text-danger">*</span></label>
+                                                         <i class="mdi mdi-account ml-3 icons"></i>
+                                                         <input type="email" class="form-control pl-5" onChange={this.handleChangeUserLogin} value={this.state.UserLogin} placeholder="Username" name="UserLogin" required=""/>
+                                                     </div>
+                                                 </div>
+ 
+ 
+                                                 <div class="col-lg-12">
+                                                     <div class="form-group position-relative">
+                                                         <label>Your Email <span class="text-danger">*</span></label>
+                                                         <i class="mdi mdi-account ml-3 icons"></i>
+                                                         <input type="email" class="form-control pl-5" onChange={this.handleChangeEmail} value={this.state.email} placeholder="Email" name="email" required=""/>
+                                                     </div>
+                                                 </div>
+ 
+                                                 <div >
+           <input type="radio" onChange={this.handlePerson} value="Student" name="gender"/> Student
+           <input type="radio" onChange={this.handlePerson} value="Teacher" name="gender"/> Teacher
+         </div>
+ 
+         
+                                                 <div class="col-lg-12">
+                                                     <div class="form-group position-relative">
+                                                         <label>Password <span class="text-danger">*</span></label>
+                                                         <i class="mdi mdi-key ml-3 icons"></i>
+                                                         <input type="password" value={this.state.password} name="password" class="form-control pl-5" onChange={this.handleChangePass} placeholder="Password" required=""/>
+                                                     </div>
+                                                 </div>
+     
+                                          
+                                                 <div class="col-lg-12 mb-0">
+                                                     <button onClick={this.login} class="btn btn-primary w-100">Sign in</button>
+                                                 </div>
+                                                 <div class="col-lg-12 mt-4 text-center">
+                                                     <h6>Or Login With</h6>
+                                                     <ul class="list-unstyled social-icon mb-0 mt-3">
+                                                         <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-facebook" title="Facebook"></i></a></li>
+                                                         <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-google-plus" title="Google"></i></a></li>
+                                                         <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-github-circle" title="Github"></i></a></li>
+                                                     </ul>
+                                                 </div>
+                                                 <div class="col-12 text-center">
+                                                     <p class="mb-0 mt-3"><small class="text-dark mr-2">Don't have an account ?</small> <a href="/SignIn"  class="text-dark font-weight-bold">Sign Up</a></p>
+ 
+ 
+ <h7  style={{color:'red',fontWeight:'bold',paddingLeft:'50px',paddingRight:'60px'}}>{this.state.errorMessage}</h7> 
+                                                 </div>
+                                             </div>
+                                         </form>
+                                       
+                                     </div>
+                                 </div> 
+                             </div>
+                         </div> 
+                     </div>
+                 </div>
+             </section> 
+ 
+             </div>  </>)}
             </div>
         )
     }

@@ -86,13 +86,13 @@ export class Submissions extends Component {
                                                     {
                                                         this.state.submissions.map(item => {
                                                             return(
-                                                                <Link to={'/correct/' + item.id}>
+                                                                
                                                                     <tr>
                                                                         <td>{item.name}</td>
-                                                                        <th scope="row">{ item.task } </th>
+                                                                        <th scope="row"><Link to={'/correct/' + item.id}>{ item.task }  </Link></th>
                                                                         
                                                                     </tr>
-                                                                </Link>
+                                                               
                                                                 
                                                             )
                                                         })
