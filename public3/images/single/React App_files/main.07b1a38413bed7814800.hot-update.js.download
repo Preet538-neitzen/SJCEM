@@ -1,0 +1,1754 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _New__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./New */ "./src/New.js");
+/* harmony import */ var _Components_Dashboard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Components/Dashboard */ "./src/Components/Dashboard.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _UserSignIn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./UserSignIn */ "./src/UserSignIn.js");
+/* harmony import */ var _Components_AddProfile__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Components/AddProfile */ "./src/Components/AddProfile.js");
+/* harmony import */ var _NGO_NgoSignIn__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./NGO/NgoSignIn */ "./src/NGO/NgoSignIn.js");
+/* harmony import */ var _Components_Landing__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Components/Landing */ "./src/Components/Landing.js");
+/* harmony import */ var _Components_Bot__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Components/Bot */ "./src/Components/Bot.js");
+/* harmony import */ var _Quiz_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Quiz/index */ "./src/Quiz/index.js");
+/* harmony import */ var _Components_ResultDisplay__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Components/ResultDisplay */ "./src/Components/ResultDisplay.js");
+/* harmony import */ var _Blog_SciencePost__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Blog/SciencePost */ "./src/Blog/SciencePost.js");
+/* harmony import */ var _Blog_BlogPage__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Blog/BlogPage */ "./src/Blog/BlogPage.js");
+/* harmony import */ var _Blog_CommercePost__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./Blog/CommercePost */ "./src/Blog/CommercePost.js");
+/* harmony import */ var _Blog_ArtsPost__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./Blog/ArtsPost */ "./src/Blog/ArtsPost.js");
+var _jsxFileName = "C:\\Users\\Preet\\Desktop\\codeshas\\Code\\src\\App.js";
+
+
+
+
+ // import Header from './UpAndDown/Header'
+// import Footer from './UpAndDown/Footer'
+
+
+
+ // import Quiz from './Components/Quiz';
+
+
+
+
+
+
+
+
+
+
+class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "App",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["BrowserRouter"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Switch"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+      exact: true,
+      path: "/",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_Dashboard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+      exact: true,
+      path: "/ResultDisplay",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_ResultDisplay__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 50
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+      exact: true,
+      path: "/Login",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_New__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+      exact: true,
+      path: "/SignIn",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserSignIn__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 56
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+      exact: true,
+      path: "/AddProfile",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 58
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_AddProfile__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59
+      },
+      __self: this
+    }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+      exact: true,
+      path: "/Bot",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 71
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_Bot__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+      exact: true,
+      path: "/Quiz",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Quiz_index__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+      exact: true,
+      path: "/BlogPage",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Blog_BlogPage__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+      exact: true,
+      path: "/sciencePost",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 80
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Blog_SciencePost__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 81
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+      exact: true,
+      path: "/commercePost",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 83
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Blog_CommercePost__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 84
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+      exact: true,
+      path: "/artsPost",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 86
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Blog_ArtsPost__WEBPACK_IMPORTED_MODULE_15__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 87
+      },
+      __self: this
+    })))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/Blog/ArtsPost.js":
+/*!******************************!*\
+  !*** ./src/Blog/ArtsPost.js ***!
+  \******************************/
+/*! exports provided: ArtsPost, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArtsPost", function() { return ArtsPost; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\Preet\\Desktop\\codeshas\\Code\\src\\Blog\\ArtsPost.js";
+
+class ArtsPost extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 6
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
+      id: "topnav",
+      class: "defaultscroll sticky",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "logo",
+      href: "/BlogPage",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      },
+      __self: this
+    }, "Blogs")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "buy-button",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "https://1.envato.market/4n73n",
+      target: "_blank",
+      class: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, "Username")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "menu-extras",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "menu-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "navbar-toggle",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "lines",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      id: "navigation",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      class: "navigation-menu",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "/BlogPage",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, "Posts")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      class: "has-submenu",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "javascript:void(0)",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, "Create Post"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "buy-menu-btn d-none",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }, "Username"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+      class: "section",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "col-lg-8 col-md-7",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "blog position-relative overflow-hidden shadow rounded",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "position-relative",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: "https://blog.americansforthearts.org/sites/default/files/images/2020/artsblog/WanderingAesthetics4.jpg",
+      class: "img-fluid rounded-top",
+      alt: "",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "content p-4",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      class: "text-muted mt-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59
+      },
+      __self: this
+    }, "One can only wonder what Marshall McLuhan, who coined the phrase \u201CThe medium is the message,\u201D would have thought about the Rest Stop Theatre Project, a novel outdoor mobile experience that takes place in the back of a beat-up pickup truck. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("blockquote", {
+      class: "blockquote mt-3 p-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      class: "text-muted mb-0 font-italic",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61
+      },
+      __self: this
+    }, "\u201CWe have always been interested in the power of social change and engaging with the community,\u201D says Kyle, who has a degree in political science and government. \u201CPerforming from a pickup truck allowed us to challenge the notion that voting, like theatre, is a luxury only relevant to some.\u201D")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      class: "text-muted",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 63
+      },
+      __self: this
+    }, "The effort was made possible through a grant from Citizen University in Seattle, a nonprofit that promotes and teaches the art of powerful citizenship. It\u2019s also a collaboration between Kyle, who acts in the show, and other local actors: Katie Beck of Gum-Dip Theatre, John Dayo-Aliya from Ma \u2018Sue Productions, and Mercedes Littell. They put on 10 performances across different parking lots and neighborhoods in Akron, exploring the many facets that make up the culture of voting. Five scenes, transitioned with song, included physical comedy and a clownish debate between the characters Ima B. Voting and Don T. Matters. And woven throughout the content, audiences were treated to the facts and history of voting. At each performance, a volunteer was on hand offering audience members the opportunity to register to vote. At one of the performances, Kyle recalls there was a group of people who had just been released from prison. \u201CThey were not registered to vote, and weren\u2019t even sure if they could register, but we explained they could, and they did. It was pretty powerful.\u201D"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "post-meta mt-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      class: "list-unstyled mb-0",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 73
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      class: "list-inline-item mr-2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "javascript:void(0)",
+      class: "text-muted like",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      class: "mdi mdi-heart-outline mr-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74
+      },
+      __self: this
+    }), "23")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      class: "list-inline-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "javascript:void(0)",
+      class: "text-muted comments",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      class: "mdi mdi-comment-outline mr-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    }), "98"))))))))))));
+  }
+
+}
+/* harmony default export */ __webpack_exports__["default"] = (ArtsPost);
+
+/***/ }),
+
+/***/ "./src/Blog/BlogPage.js":
+/*!******************************!*\
+  !*** ./src/Blog/BlogPage.js ***!
+  \******************************/
+/*! exports provided: BlogPage, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlogPage", function() { return BlogPage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Config_Config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! .././Config/Config */ "./src/Config/Config.js");
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/app */ "./node_modules/firebase/app/dist/index.cjs.js");
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(firebase_app__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _SciencePost__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SciencePost */ "./src/Blog/SciencePost.js");
+var _jsxFileName = "C:\\Users\\Preet\\Desktop\\codeshas\\Code\\src\\Blog\\BlogPage.js";
+
+
+
+
+class BlogPage extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+    this.state = {
+      Scienceposts: [{
+        postedBy: 'mistryrohan',
+        postTitle: 'A Trapped-Ion Pair May Help Scale Up Quantum Computers',
+        postContent: 'Of the many divergent approaches to building a practical quantum computer, one of the most promising paths leads toward ion traps. In these traps, single ions are held still and serve as the basic units of data, or qubits, of the computer. With the help of lasers, these qubits interact with each other to perform logic operation',
+        type: "science"
+      }, {
+        postedBy: 'preetSangh',
+        type: "science",
+        postTitle: 'Infographics',
+        postContent: 'He is a shameless publicity whore, too. His reality show premiered on VH1 last year, and his blogsite is peppered with snaps of him cuddling Paris Hilton at premieres.'
+      }, {
+        type: "science",
+        postedBy: 'raj ghamsani',
+        postTitle: 'Surveys and Polls',
+        postContent: 'Armstrongs honesty has added to her popularity, and she has written about work, family life, postnatal depression, motherhood, puppies and her Mormon upbringing with the same candid and engaging voice. '
+      }, {
+        type: "science",
+        postedBy: 'ankit gupta',
+        postTitle: 'Screencasts',
+        postContent: 'Of the many divergent approaches to building a practical quantum computer, one of the most promising paths leads toward ion traps. In these traps, single ions are held still and serve as the basic units of data, or qubits, of the computer. With the help of lasers, these qubits interact with each other to perform logic operations.'
+      }, {
+        type: 'commerce',
+        postedBy: 'Michael Torr',
+        postTitle: 'CONTENT MARKETING',
+        postContent: ' Ecommerce CMS: Why Content Still Reigns and 11 CMS to Get Your Message to Your Potential Customers'
+      }, {
+        type: 'commerce',
+        postedBy: 'rohan mistry',
+        postTitle: 'Rants',
+        postContent: 'The incident caused such fierce debate that Dooce found itself turned into a verb that is used in popular parlance (often without users realising its evolution): ooced - to be fired from one job as a direct result of ones personal website.'
+      }, {
+        type: 'commerce',
+        postedBy: 'prrett danhj',
+        postTitle: 'Sales',
+        postContent: 'One of the best-known personal bloggers (those who provide more of a diary than a soapbox or reporting service), Heather Armstrong has been writing online since 2001.'
+      }, {
+        type: 'commerce',
+        postedBy: 'Vaishnav Damani',
+        postTitle: 'Operations Executive',
+        postContent: 'Site took off, boosted partly through close links to popular blog-building website Blogger (he later married one of the founders). And as the phenomenon grew quickly, Kottke became a well-known filter for surfers on the lookout for interesting reading.'
+      }, {
+        type: 'commerce',
+        postedBy: 'monika patel',
+        postTitle: 'Space and Research',
+        postContent: ' A couple of key moments boosted Kottke fame: first, being threatened with legal action by Sony for breaking news about a TV show, but most notably quitting his web-design job and going solo three years ago. A host of micropatrons and readers donated cash to cover his salary, but these days he gets enough advertising to pay the bills. He continues to plug away at the site as it enters its 10th year.'
+      }]
+    };
+  }
+
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 79
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
+      id: "topnav",
+      class: "defaultscroll sticky",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 80
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 81
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 82
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "logo",
+      href: "/BlogPage",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 83
+      },
+      __self: this
+    }, "Blogs")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "buy-button",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 85
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 86
+      },
+      __self: this
+    }, "Username")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "menu-extras",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 89
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "menu-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 90
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "navbar-toggle",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 92
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "lines",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 93
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 94
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 95
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 96
+      },
+      __self: this
+    }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      id: "navigation",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 103
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      class: "navigation-menu",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 105
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 106
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "/BlogPage",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 106
+      },
+      __self: this
+    }, "Posts")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      class: "has-submenu",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 107
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "javascript:void(0)",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 108
+      },
+      __self: this
+    }, "Create Post"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "buy-menu-btn d-none",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 114
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 115
+      },
+      __self: this
+    }, "Username"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      style: {
+        paddingTop: 100,
+        marginLeft: 300
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 120
+      },
+      __self: this
+    }, this.state.Scienceposts.map(temp => {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: temp.type == "science" ? "/sciencePost" : "/commercePost",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 124
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+        class: "section",
+        style: {
+          padding: 0
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 125
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        class: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 126
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        class: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 127
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        class: "col-lg-8 col-md-7",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 129
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        class: "",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 130
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        class: "blog position-relative overflow-hidden shadow rounded",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 131
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        class: "content p-4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 135
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 136
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        class: "mdi mdi-tag text-primary mr-1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 136
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "javscript:void(0)",
+        class: "text-primary",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 136
+        },
+        __self: this
+      }, temp.type)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        class: "text-muted",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 138
+        },
+        __self: this
+      }, temp.postContent), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        class: "post-meta mt-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 139
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        class: "list-unstyled mb-0",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 140
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        class: "list-inline-item mr-2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 141
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "javascript:void(0)",
+        class: "text-muted like",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 141
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        class: "mdi mdi-heart-outline mr-1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 141
+        },
+        __self: this
+      }), "33")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        class: "list-inline-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 142
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "javascript:void(0)",
+        class: "text-muted comments",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 142
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        class: "mdi mdi-comment-outline mr-1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 142
+        },
+        __self: this
+      }), "08"))))))))))));
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "/artsPost",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 157
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+      class: "section",
+      style: {
+        padding: 0
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 158
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 159
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 160
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "col-lg-8 col-md-7",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 162
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 163
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "blog position-relative overflow-hidden shadow rounded",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 164
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "content p-4",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 168
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 169
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      class: "mdi mdi-tag text-primary mr-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 169
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "javscript:void(0)",
+      class: "text-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 169
+      },
+      __self: this
+    }, "Arts")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      class: "text-muted",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 171
+      },
+      __self: this
+    }, "One can only wonder what Marshall McLuhan, who coined the phrase \u201CThe medium is the message,\u201D would have thought about the Rest Stop Theatre Project, a novel outdoor mobile experience that takes place in the back of a beat-up pickup truck."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "post-meta mt-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 172
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      class: "list-unstyled mb-0",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 173
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      class: "list-inline-item mr-2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 174
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "javascript:void(0)",
+      class: "text-muted like",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 174
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      class: "mdi mdi-heart-outline mr-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 174
+      },
+      __self: this
+    }), "53")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      class: "list-inline-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 175
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "javascript:void(0)",
+      class: "text-muted comments",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 175
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      class: "mdi mdi-comment-outline mr-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 175
+      },
+      __self: this
+    }), "88"))))))))))))));
+  }
+
+}
+/* harmony default export */ __webpack_exports__["default"] = (BlogPage);
+
+/***/ }),
+
+/***/ "./src/Blog/CommercePost.js":
+/*!**********************************!*\
+  !*** ./src/Blog/CommercePost.js ***!
+  \**********************************/
+/*! exports provided: CommercePost, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommercePost", function() { return CommercePost; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\Preet\\Desktop\\codeshas\\Code\\src\\Blog\\CommercePost.js";
+
+class CommercePost extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 6
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
+      id: "topnav",
+      class: "defaultscroll sticky",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "logo",
+      href: "/BlogPage",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      },
+      __self: this
+    }, "Blogs")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "buy-button",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, "Username")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "menu-extras",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "menu-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "navbar-toggle",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "lines",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      id: "navigation",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      class: "navigation-menu",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "/BlogPage",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, "Posts")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      class: "has-submenu",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "javascript:void(0)",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, "Create Post"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "buy-menu-btn d-none",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }, "Buy Now"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+      class: "section",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "col-lg-8 col-md-7",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "blog position-relative overflow-hidden shadow rounded",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "position-relative",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTPQqD5S_TBZfqNlhSJoUSQOIaTi9ezVnu-bA0F25qQ0Q8b7_HD",
+      class: "img-fluid rounded-top",
+      alt: "",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "content p-4",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      class: "text-muted mt-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59
+      },
+      __self: this
+    }, "GST Council cracks the whip on profiteering, okays Aadhaar for registration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("blockquote", {
+      class: "blockquote mt-3 p-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      class: "text-muted mb-0 font-italic",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61
+      },
+      __self: this
+    }, "\u201CWhile the extension of the term of the NAA was expected, one hopes the government comes up with detailed guidelines and seek to restrict the same only in the case of consumer complaints,\u201D said Jain.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      class: "text-muted",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 63
+      },
+      __self: this
+    }, "Plugging tax evasion and consumer welfare took center stage in the first meeting of the Goods and Services Tax (GST) Council under the chairmanship of Finance Minister Nirmala Sitharaman on Friday. The Council, during the half-day meeting, imposed stiff penalties on companies not passing on rate cut benefits to consumers, besides giving a two-year extension to the National Anti-Profiteering Authority (NAA), whose term would have expired in November. However, experts said the council should come up with a methodology of calculating the profiteered amount. Without this, there is arbitrariness. To plug tax evasion, measures like using Aadhaar for registration, voluntary electronic invoicing and mandatory electronic ticketing for movie theatres were approved. \u201CThe decision to use Aadhaar for registration is a significant step and could lead to similar linkages with income tax,\u201D said Pratik Jain, partner, PwC India. As for the reduction in rates on electric vehicles from 12 percent to 5 percent and for chargers from 18 percent to 12 percent, the matter was referred to the fitment committee. \u201CThe view was that protocol was not followed as the matter was not discussed by the fitment committee,\u201D said a government official. The contentious issue of a uniform GST rate on lotteries has been referred to the attorney general (AG) of India. Kerala Finance Minister Thomas Isaac in his speech in the Council threatened to press for voting in case the matter was pushed forward. \u201CSo far all decisions in the Council have been taken by consensus. I hope this tradition is maintained. In case the agenda is pushed forward, I will be failing in my duty if I don\u2019t demand a division,\u201D Isaac said. Sitharaman said the issue of lotteries had been referred to the AG in the context of the ruling by the Calcutta High Court and Article 304 of the Constitution. The HC\u2008had rejected a plea that the council cannot impose GST on lotteries. Article 304 allows a state to impose the same tax rate on imported goods and goods produced in the state. Punjab raised the matter related to Article 304. \u201CThe issue relates to consumption. If the consumers of both the lotteries, private and state, are the same, then how can there be two rates,\u201D asked a government official. Regarding the decision on anti-profiteering, at present Rs 25,000 is imposed as penalty on a company that has profiteered the amount if the amount is not deposited. Now, the company has to deposit 10 per cent of the profiteered amount if the money is not deposited within 30 days of the order. This is to ensure that rate cuts are passed on to consumers, said Revenue Secretary Ajay Bhushan Pandey. At the meeting on Friday, e-invoicing got in-principle approval. The Council has re-proposed the system. The GST Council was working on various models for electronic invoicing."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "post-meta mt-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 93
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      class: "list-unstyled mb-0",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 94
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      class: "list-inline-item mr-2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 95
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "javascript:void(0)",
+      class: "text-muted like",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 95
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      class: "mdi mdi-heart-outline mr-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 95
+      },
+      __self: this
+    }), "33")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      class: "list-inline-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 96
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "javascript:void(0)",
+      class: "text-muted comments",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 96
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      class: "mdi mdi-comment-outline mr-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 96
+      },
+      __self: this
+    }), "08"))))))))))));
+  }
+
+}
+/* harmony default export */ __webpack_exports__["default"] = (CommercePost);
+
+/***/ }),
+
+/***/ "./src/Blog/SciencePost.js":
+/*!*********************************!*\
+  !*** ./src/Blog/SciencePost.js ***!
+  \*********************************/
+/*! exports provided: SciencePost, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SciencePost", function() { return SciencePost; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\Preet\\Desktop\\codeshas\\Code\\src\\Blog\\SciencePost.js";
+
+class SciencePost extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 6
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
+      id: "topnav",
+      class: "defaultscroll sticky",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "logo",
+      href: "/BlogPage",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      },
+      __self: this
+    }, "Blogs")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "buy-button",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, "Username")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "menu-extras",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "menu-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "navbar-toggle",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "lines",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      id: "navigation",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      class: "navigation-menu",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "/BlogPage",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, "Posts")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      class: "has-submenu",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "javascript:void(0)",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, "Create Post"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "buy-menu-btn d-none",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      class: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }, "Buy Now"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+      class: "section",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "col-lg-8 col-md-7",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "blog position-relative overflow-hidden shadow rounded",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "position-relative",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZubQsSa-lTWo_H8wLC1pjEIBuE8xMLS28b9A6aqn6HqLmsLvG",
+      class: "img-fluid rounded-top",
+      alt: "",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "content p-4",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      class: "text-muted mt-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59
+      },
+      __self: this
+    }, "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("blockquote", {
+      class: "blockquote mt-3 p-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      class: "text-muted mb-0 font-italic",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61
+      },
+      __self: this
+    }, "\" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. \"")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      class: "text-muted",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 63
+      },
+      __self: this
+    }, "The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      class: "post-meta mt-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 64
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      class: "list-unstyled mb-0",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 65
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      class: "list-inline-item mr-2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "javascript:void(0)",
+      class: "text-muted like",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      class: "mdi mdi-heart-outline mr-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66
+      },
+      __self: this
+    }), "33")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      class: "list-inline-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "javascript:void(0)",
+      class: "text-muted comments",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      class: "mdi mdi-comment-outline mr-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67
+      },
+      __self: this
+    }), "08"))))))))))));
+  }
+
+}
+/* harmony default export */ __webpack_exports__["default"] = (SciencePost);
+
+/***/ })
+
+})
+//# sourceMappingURL=main.07b1a38413bed7814800.hot-update.js.map
